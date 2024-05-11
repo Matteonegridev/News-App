@@ -3,6 +3,22 @@
 const axios = require("axios");
 const _ = require("lodash");
 
+let searchIcon = document.getElementById("search-icon");
+let input = document.querySelector(".input");
+
+searchIcon.addEventListener("click", function () {
+  input.style.transform = "scaleX(1)";
+  input.style.transition = "all 350ms ease-in-out";
+  searchIcon.style.opacity = 0;
+  input.focus();
+});
+
+input.addEventListener("blur", function () {
+  input.style.transform = "scaleX(0)";
+  setTimeout(() => {
+    searchIcon.style.opacity = 1;
+  }, 400);
+});
 const newsContainer = document.getElementById("news-container");
 let url = `https://hacker-news.firebaseio.com/v0/newstories.json`;
 let newsStart = 0;
