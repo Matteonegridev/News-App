@@ -3,6 +3,8 @@
 const axios = require("axios");
 const _ = require("lodash");
 
+const newsContainer = document.getElementById("news-container");
+
 window.onload = function () {
   let searchIcon = document.getElementById("search-icon");
   let input = document.querySelector(".input");
@@ -22,7 +24,6 @@ window.onload = function () {
   });
 };
 
-const newsContainer = document.getElementById("news-container");
 let url = `https://hacker-news.firebaseio.com/v0/newstories.json`;
 let newsStart = 0;
 let newsLimit = 10;
