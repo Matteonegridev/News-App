@@ -14,3 +14,5 @@ The button _Load More_ will give you the chance to check on 10 more news.
 
 Want to send me a message? Do it here:
 matteonegridev@gmail.com
+
+## [CHECK TECHJOURNAL](https://techjournal.netlify.app)
