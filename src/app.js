@@ -5,6 +5,7 @@ const _ = require("lodash");
 
 const newsContainer = document.getElementById("news-container");
 
+// quando la pagina carica esce l'icona del search con window.onload
 window.onload = function () {
   let searchIcon = document.getElementById("search-icon");
   let input = document.querySelector(".input");
